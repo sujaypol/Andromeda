@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andromeda</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(images/Backg.png);
+        /* background-size: contain; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Open Sans Regular 400', sans-serif;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 56px;
+        top: 10px;
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 22px auto;
+        /* border: 2px solid rgb(0, 255, 21); */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 36px;
+        display: inline-block;
+        /* border: 2px solid rgb(38, 0, 255); */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 24px 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .navbar li, .active a:visited {
+        color: gray;
+    }
+
+    .left img {
+        width: 65px;
+        font-size: 30px;
+        filter: invert(1);
+        margin: 0px;
+        padding: 3px;
+    }
+
+    .left div {
+        text-align: center;
+        padding: 0px;
+        margin: -15px;
+        font-size: 18px;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid rgb(85, 85, 85);
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Open Sans Regular 400', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: rgb(85, 85, 85);
+    }
+
+    .container {
+        /* border: 2px solid green; */
+        display: block;
+        margin: 88px auto;
+        text-align: center;
+        font-size: 16px;
+        padding: 15px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 279px;
+        padding: 8px;
+        border: 2px solid black;
+        margin: 8px auto;
+        border-radius: 8px;
+        font-family: 'Open Sans Regular 400', sans-serif;
+    }
+
+    .container button{
+        margin: 12px auto;
+        width: 297px;
+        background-color: black;
+        color: white;
+        padding:8px;
+        border: 2px solid rgb(85, 85, 85);
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: 'Open Sans Regular 400', sans-serif;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="images/logo.jpg" alt="">
+            <div>Andromeda</div>
+        </div>
+        <!-- mid box for menus -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!-- right box for icons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us Now</button>
+        </div>
+    </header>
+<div class="container">
+    <h1>Contact Us Now</h1>
+    <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter email address">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter phone number">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Write about yourself">
+        </div>
+        <button class="btn">Submit</button>
+    </form>
+</div>
+</body>
+</html>
